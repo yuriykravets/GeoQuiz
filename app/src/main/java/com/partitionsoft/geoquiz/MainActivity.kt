@@ -94,7 +94,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (numQuestionsAnswered == 6) {
-            val percentageScore = (numCorrectAnswers.toDouble() / numQuestionsAnswered.toDouble()) * 100
+            val percentageScore =
+                (numCorrectAnswers.toDouble() / numQuestionsAnswered.toDouble()) * 100
             Toast.makeText(this, "Your score is $percentageScore%", Toast.LENGTH_LONG).show()
         }
     }
