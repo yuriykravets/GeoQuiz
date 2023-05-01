@@ -1,5 +1,6 @@
 package com.partitionsoft.geoquiz
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -45,6 +46,13 @@ class MainActivity : AppCompatActivity() {
             quizViewModel.moveToNext()
             updateQuestion()
         }
+
+        binding.cheatButton.setOnClickListener {
+            // Start CheatActivity
+            val intent = Intent(this, CheatActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.previousButton.setOnClickListener {
             quizViewModel.moveToNext()
             updateQuestion()
