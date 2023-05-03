@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private var numQuestionsAnswered = 0
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "onCreate(Bundle?) called")
